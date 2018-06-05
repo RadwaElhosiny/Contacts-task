@@ -1,19 +1,16 @@
 <div class="contacts-container">
-        <app-search></app-search>
-        <div class="add" routerLink="/add">
-            Add New Contacts
-            <span>
-                <i routerLink="/add" class="fa fa-plus"></i>
-            </span>
-        </div>
+    <app-search></app-search>
+    <div class="add" routerLink="/add">
+        Add New Contacts
+        <span>
+            <i routerLink="/add" class="fa fa-plus"></i>
+        </span>
+    </div>
     <div class="latest-contacts">
         Latest Contacts
     </div>
     <div>
-
-        <app-latest-listing [contacts]="getSliced(latest)">
-
-        </app-latest-listing>
+        <app-latest-listing [contacts]="getSliced(latest)"></app-latest-listing>
     </div>
     <div class="links">
         <a *ngFor="let letter of letters" [href]="'#' + letter" class="letterLink">{{letter}}</a>

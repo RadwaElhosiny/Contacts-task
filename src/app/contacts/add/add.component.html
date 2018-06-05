@@ -4,7 +4,7 @@
     <div class="pic-container">
       <div class="contact-pic"></div>
       <label id="file-wrapper"> Add Photo
-        <input type="file" #photoe=ngModel [(ngModel)]="contact.photo" name="photo" >
+        <input type="file" #photoe=ngModel [(ngModel)]="contact.photo" name="photo">
       </label>
     </div>
     <div class="contact-info">
@@ -21,7 +21,7 @@
     </div>
     <div class="contact-info">
       <input #mail=ngModel type="text" placeholder="Email Address" [(ngModel)]="contact.email" name="mail" class="inp"> </div>
-    <input class="btn-add" type="submit" value="Add Contact"/>
+    <input class="btn-add" type="submit" value="Add Contact" />
     <input routerLink="/home" class="btn-cancel" type="button" value="Cancel">
 
   </div>

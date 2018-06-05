@@ -11,23 +11,21 @@ import { Router } from '@angular/router';
 })
 export class AddComponent implements OnInit {
   contacts: Icontact[];
-  public contact :Icontact = {};
-  
-  constructor( private contService:contactService , private router:Router) { }
-  
+  public contact: Icontact = {};
+
+  constructor(private contService: contactService, private router: Router) { }
+
   ngOnInit() {
     this.contService.getContacts().subscribe((dataList) => {
       this.contacts = dataList['data'];
-      //console.log(this.filteredContacts);
     });
-    
+
   }
-  public OnAdd(form: NgForm)
-  { 
+  public OnAdd(form: NgForm) {
     //the contact added into the array
-    const value =form.value;
+    const value = form.value;
     this.contacts.push(value);
-    console.log(this.contacts);   
+    console.log(this.contacts);
     this.router.navigate(['/home']);
   }
 }

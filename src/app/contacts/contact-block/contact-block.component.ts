@@ -28,3 +28,4 @@ export class ContactBlockComponent implements OnInit {
     });
   }
 }
+
