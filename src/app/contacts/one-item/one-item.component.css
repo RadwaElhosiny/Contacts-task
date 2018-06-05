@@ -1,0 +1,51 @@
+.one-item-container
+{
+    display: block;
+    border-bottom: 1px solid #dedede;
+}
+.contact-container
+{
+    display: table-row;
+    position: relative;
+    cursor: pointer;
+    text-align: left;
+    color: #333;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+.contact-img
+{
+    background-image: url(../../../assets/img/avatar.jpg);
+    background-size: cover;
+    margin: 10px 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+.contact-info
+{
+    display: table-cell;
+    vertical-align: middle;
+    width: 256px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+.name
+{
+    max-width: 220px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+.number
+{
+    max-width: 220px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 13px;
+    color: #ababab;
+    line-height: 20px;
+}

@@ -1,0 +1,85 @@
+.add-container 
+{
+    border: 1px dashed gray;
+    margin: 20px;
+    padding: 20px;
+    width: 600px;
+}
+.main-head
+{
+    font-size: 23px;
+    font-family: sans-serif;
+    color: rgb(184, 176, 176);
+    border-bottom: 2px rgb(154, 218, 219) solid;
+    padding: 5px;
+}
+.contact-pic
+{
+    background-image: url(../../../assets/img/avatar.jpg);
+    background-size: cover;
+    margin: 30px 235px 10px;
+    border-radius: 50%;
+    width: 85px;
+    height: 85px;
+    align-content: center;
+}
+label
+{
+    display: table;
+    color: rgb(207, 201, 201);
+    font-size: 22px;
+    font-family: sans-serif;
+    text-align: center;
+    margin-left: 225px;
+    cursor: pointer;
+}
+input[type="file"] {
+    display: none;
+}
+.contact-info
+{
+    border-bottom: 2px rgb(154, 218, 219) solid;
+    padding: 15px;
+}
+input
+{
+    border: none;
+}
+::placeholder
+{
+    font-size: 18px;
+    font-family: sans-serif;
+    color: rgb(184, 176, 176);
+}
+.btn-add
+{
+    color: white;
+    background-color: rgb(80, 180, 138);
+    border-radius: 12px;
+    padding: 9px 70px;
+    margin: 30px 160px 10px;
+    font-size: 18px;
+    font-family: sans-serif;
+    display: block;
+    cursor: pointer;
+}
+.btn-cancel
+{
+    color: white;
+    background-color: blue;
+    border-radius: 12px;
+    padding: 9px 70px;
+    margin: 0 180px;
+    font-size: 18px;
+    font-family: sans-serif;
+    display: block;
+    cursor: pointer;
+}
+.inp
+{
+    width: 500px;
+}
+.num-input
+{
+    width: 300px;
+}

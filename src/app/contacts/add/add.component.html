@@ -1,0 +1,28 @@
+<form method="post" (ngSubmit)="OnAdd(MyForm)" #MyForm=ngForm>
+  <div class="add-container">
+    <div class="main-head">Add a New Conatact</div>
+    <div class="pic-container">
+      <div class="contact-pic"></div>
+      <label id="file-wrapper"> Add Photo
+        <input type="file" #photoe=ngModel [(ngModel)]="contact.photo" name="photo" >
+      </label>
+    </div>
+    <div class="contact-info">
+      <input #fname=ngModel type="text" placeholder="First name" [(ngModel)]="contact.firstName" name="fname" class="inp"> </div>
+    <div class="contact-info">
+      <input #lName=ngModel type="text" placeholder="Last name" [(ngModel)]="contact.lastName" name="lname" class="inp"> </div>
+    <div class="contact-info">
+      <span class="code">
+        <input type="text" placeholder="+44">
+      </span>
+      <span class="num">
+        <input #number=ngModel type="text" placeholder="5672249" [(ngModel)]="contact.mobileNumber" name="num" class="num-input">
+      </span>
+    </div>
+    <div class="contact-info">
+      <input #mail=ngModel type="text" placeholder="Email Address" [(ngModel)]="contact.email" name="mail" class="inp"> </div>
+    <input class="btn-add" type="submit" value="Add Contact"/>
+    <input routerLink="/home" class="btn-cancel" type="button" value="Cancel">
+
+  </div>
+</form>
